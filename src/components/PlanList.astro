@@ -1,0 +1,51 @@
+---
+import { priceLabel } from "../data/catalog.mjs";
+
+const { plans } = Astro.props;
+---
+
+{
+  plans.length === 0 ? (
+    <p>No captured price.</p>
+  ) : (
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Limit</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        {plans.map((plan) => (
+          <tr>
+            <td>
+              {plan.name}
+              {plan.free_tier ? " (free tier)" : ""}
+            </td>
+            <td>
+              {priceLabel(plan)}
+              {plan.price_annual !== null ? `, $${plan.price_annual}/yr` : ""}
+            </td>
+            <td>
+              {plan.credits_or_limit === null
+                ? "None captured"
+                : `${plan.credits_or_limit} ${plan.limit_unit}`}
+            </td>
+            <td>
+              {plan.verification === "verified" ? "Verified" : "Unverified"}
+              {plan.checked_at ? ` ${plan.checked_at}` : ""}
+              {plan.source_url ? (
+                <div>
+                  <a href={plan.source_url}>Source</a>
+                </div>
+              ) : null}
+              {plan.notes ? <p>{plan.notes}</p> : null}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}

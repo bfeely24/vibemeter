@@ -296,3 +296,21 @@ export function priceLabel(plan) {
   if (plan.verification === "unverified") return "No captured price";
   return "No public price";
 }
+
+export function priceSummary(plans) {
+  const verified = plans.filter(
+    (plan) => plan.verification === "verified" && plan.price_monthly !== null,
+  );
+  if (verified.length === 0) return "Unverified";
+  const paid = verified.filter((plan) => plan.price_monthly > 0).map((plan) => plan.price_monthly);
+  if (paid.length === 0) return "$0/mo";
+  const min = Math.min(...paid);
+  const amount = Number.isInteger(min) ? `$${min}` : `$${min.toFixed(2)}`;
+  const hasFree = verified.some((plan) => plan.price_monthly === 0);
+  return hasFree ? `Free, paid from ${amount}/mo` : `From ${amount}/mo`;
+}
+
+export function statusLabel(check) {
+  if (!check || check.indicator === null) return "unknown";
+  return check.description ?? check.indicator;
+}

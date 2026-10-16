@@ -1,0 +1,75 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadCatalog, statusLabel } from "../data/catalog.mjs";
+import { sitePath } from "../lib/paths.mjs";
+
+const catalog = await loadCatalog(process.cwd());
+const names = new Map(catalog.tools.map((tool) => [tool.id, tool.name]));
+---
+
+<Base title="Changes · VibeMeter" description="Price and status changes.">
+  <h1>Changes</h1>
+  <p>
+    <a href={sitePath("/changes.xml")}>RSS feed</a>
+  </p>
+  <h2>Price changes</h2>
+  {
+    catalog.priceChanges.length === 0 ? (
+      <p>No price changes recorded yet.</p>
+    ) : (
+      <table>
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>Tool</th>
+            <th>Plan</th>
+            <th>Field</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Confirmed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {catalog.priceChanges.map((change) => (
+            <tr>
+              <td>{change.detected_at}</td>
+              <td>{names.get(change.tool_id)}</td>
+              <td>{change.plan}</td>
+              <td>{change.field}</td>
+              <td>{String(change.old)}</td>
+              <td>{String(change.new)}</td>
+              <td>{change.confirmed ? "yes" : "no"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )
+  }
+  <h2>Status checks</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Checked</th>
+        <th>Indicator</th>
+        <th>HTTP</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        catalog.statusChecks.map((check) => (
+          <tr>
+            <td>
+              <a href={sitePath(`/tools/${check.tool_id}/`)}>{names.get(check.tool_id)}</a>
+            </td>
+            <td>{check.checked_at}</td>
+            <td>{check.indicator ?? "unknown"} · {statusLabel(check)}</td>
+            <td>
+              <a href={check.source_url}>{check.http_status}</a>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</Base>
