@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cursor-vs-windsurf",
+    "left": "cursor",
+    "right": "windsurf",
+    "title": "Cursor vs Windsurf"
+  },
+  {
+    "id": "lovable-vs-bolt",
+    "left": "lovable",
+    "right": "bolt",
+    "title": "Lovable vs Bolt"
+  },
+  {
+    "id": "cursor-vs-github-copilot",
+    "left": "cursor",
+    "right": "github-copilot",
+    "title": "Cursor vs GitHub Copilot"
+  }
+]
