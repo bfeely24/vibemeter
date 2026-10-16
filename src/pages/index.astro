@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadCatalog, priceSummary, statusLabel } from "../data/catalog.mjs";
+import { sitePath } from "../lib/paths.mjs";
+
+const catalog = await loadCatalog(process.cwd());
+const latestStatus = new Map();
+for (const check of catalog.statusChecks) latestStatus.set(check.tool_id, check);
+---
+
+<Base
+  title="VibeMeter"
+  description="Public prices, limits, and status for 10 AI coding tools."
+>
+  <h1>VibeMeter</h1>
+  <p class="lede">
+    Public prices and status for 10 AI coding tools. A figure appears only when this
+    repo recorded it from the vendor page.
+  </p>
+  <ul class="grid">
+    {
+      catalog.tools.map((tool) => (
+        <li>
+          <article>
+            <h2>
+              <a href={sitePath(`/tools/${tool.id}/`)}>{tool.name}</a>
+            </h2>
+            <p>{priceSummary(catalog.plansFor(tool.id))}</p>
+            <p class="meta">
+              {tool.category} · {statusLabel(latestStatus.get(tool.id))}
+              {tool.verification === "unverified" ? " · Unverified" : ""}
+            </p>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+  <h2>Comparisons</h2>
+  <ul>
+    {
+      catalog.comparisons.map((comparison) => (
+        <li>
+          <a href={sitePath(`/compare/${comparison.id}/`)}>{comparison.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <section class="signup">
+    <h2>Email</h2>
+    <p>Signup is not connected. This preview does not send your email anywhere.</p>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" type="email" disabled />
+      <button type="button" disabled>Subscribe</button>
+    </form>
+  </section>
+</Base>

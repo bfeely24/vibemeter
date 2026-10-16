@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+import PlanList from "../../components/PlanList.astro";
+import { loadCatalog, statusLabel } from "../../data/catalog.mjs";
+import { sitePath } from "../../lib/paths.mjs";
+
+export async function getStaticPaths() {
+  const catalog = await loadCatalog(process.cwd());
+  return catalog.tools.map((tool) => ({
+    params: { id: tool.id },
+    props: {
+      tool,
+      plans: catalog.plansFor(tool.id),
+      status: catalog.statusChecks.find((check) => check.tool_id === tool.id) ?? null,
+    },
+  }));
+}
+
+const { tool, plans, status } = Astro.props;
+---
+
+<Base title={`${tool.name} · VibeMeter`} description={`${tool.name} prices and status.`}>
+  <p class="meta"><a href={sitePath("/")}>All tools</a></p>
+  <h1>{tool.name}</h1>
+  <p>
+    <span class="badge">{tool.verification === "verified" ? "Verified" : "Unverified"}</span>
+    {tool.category} · {tool.vendor}
+  </p>
+  <p class="meta">
+    Status: {statusLabel(status)}
+    {status ? ` · HTTP ${status.http_status}` : ""}
+  </p>
+  <p>
+    <a href={tool.homepage}>Homepage</a>
+    · <a href={tool.pricing_url}>Pricing page</a>
+    · <a href={tool.status_url}>Status page</a>
+  </p>
+  {
+    tool.checked_at && (
+      <p class="meta">
+        Checked {tool.checked_at}
+        {tool.source_url ? (
+          <>
+            {" "}
+            · <a href={tool.source_url}>Source</a>
+          </>
+        ) : null}
+      </p>
+    )
+  }
+  {tool.notes && <p>{tool.notes}</p>}
+  {tool.verification === "unverified" && <p>Unverified. No captured price.</p>}
+  <PlanList plans={plans} />
+</Base>

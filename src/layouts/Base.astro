@@ -1,0 +1,33 @@
+---
+import { sitePath } from "../lib/paths.mjs";
+import "../styles/site.css";
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="VibeMeter changes"
+      href={sitePath("/changes.xml")}
+    />
+  </head>
+  <body>
+    <header>
+      <a href={sitePath("/")}>VibeMeter</a>
+      <nav>
+        <a href={sitePath("/changes/")}>Changes</a>
+        <a href={sitePath("/changes.xml")}>RSS</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

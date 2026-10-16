@@ -1,0 +1,113 @@
+:root {
+  color-scheme: light;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: #f4f1ea;
+  color: #1c1917;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #1e3a8a;
+}
+
+header,
+main {
+  width: min(52rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #d6d3d1;
+}
+
+header a {
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.lede {
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.grid article,
+.signup,
+.panel {
+  background: #fffdf8;
+  border: 1px solid #d6d3d1;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+}
+
+.meta {
+  color: #44403c;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.45rem 0.4rem;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #a8a29e;
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+label {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.35rem 0.5rem;
+}

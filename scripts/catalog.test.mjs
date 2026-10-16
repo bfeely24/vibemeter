@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { formatMonthly, loadCatalog, parseCatalog, priceLabel } from "../src/data/catalog.mjs";
+import { formatMonthly, loadCatalog, parseCatalog, priceLabel, priceSummary } from "../src/data/catalog.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -103,6 +103,14 @@ test("priceLabel hides numbers on unverified plans", () => {
   assert.equal(priceLabel(plan), "No captured price");
   assert.equal(priceLabel(samplePlan({ price_monthly: null })), "No public price");
   assert.equal(priceLabel(samplePlan()), "$25/mo");
+});
+
+test("priceSummary stays unverified when no plan has a number", () => {
+  assert.equal(priceSummary([]), "Unverified");
+  assert.equal(
+    priceSummary([samplePlan(), samplePlan({ name: "Free", price_monthly: 0, free_tier: true })]),
+    "Free, paid from $25/mo",
+  );
 });
 
 test("committed catalog matches the 2026-10-16 capture", async () => {

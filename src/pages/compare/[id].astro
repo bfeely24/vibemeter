@@ -1,0 +1,41 @@
+---
+import Base from "../../layouts/Base.astro";
+import PlanList from "../../components/PlanList.astro";
+import { loadCatalog, priceSummary } from "../../data/catalog.mjs";
+import { sitePath } from "../../lib/paths.mjs";
+
+export async function getStaticPaths() {
+  const catalog = await loadCatalog(process.cwd());
+  return catalog.comparisons.map((comparison) => ({
+    params: { id: comparison.id },
+    props: {
+      comparison,
+      left: catalog.tool(comparison.left),
+      right: catalog.tool(comparison.right),
+      leftPlans: catalog.plansFor(comparison.left),
+      rightPlans: catalog.plansFor(comparison.right),
+    },
+  }));
+}
+
+const { comparison, left, right, leftPlans, rightPlans } = Astro.props;
+---
+
+<Base title={`${comparison.title} · VibeMeter`} description={comparison.title}>
+  <p class="meta"><a href={sitePath("/")}>All tools</a></p>
+  <h1>{comparison.title}</h1>
+  <div class="grid">
+    <article>
+      <h2><a href={sitePath(`/tools/${left.id}/`)}>{left.name}</a></h2>
+      <p>{priceSummary(leftPlans)}</p>
+      {left.verification === "unverified" && <p>Unverified. No captured price.</p>}
+      <PlanList plans={leftPlans} />
+    </article>
+    <article>
+      <h2><a href={sitePath(`/tools/${right.id}/`)}>{right.name}</a></h2>
+      <p>{priceSummary(rightPlans)}</p>
+      {right.verification === "unverified" && <p>Unverified. No captured price.</p>}
+      <PlanList plans={rightPlans} />
+    </article>
+  </div>
+</Base>
