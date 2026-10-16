@@ -1,0 +1,9 @@
+{
+  "tool_id": "bolt",
+  "checked_at": "2026-10-16T15:16:06.874Z",
+  "indicator": "minor",
+  "incident_title": null,
+  "description": "Partial System Degradation",
+  "http_status": 200,
+  "source_url": "https://status.bolt.new/api/v2/status.json"
+}
