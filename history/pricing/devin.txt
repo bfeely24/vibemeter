@@ -1,0 +1,613 @@
+Product
+Solutions
+Resources
+Customers
+Pricing
+Blog
+Get a demo
+Login
+Get started
+Meet Devin, your team's autonomous software engineer
+
+Devin runs in the cloud or on your machine, tests in its own browser, and won't stop until the PR is ready to merge
+
+Get started
+Book a demo
+New session
+Automations
+Security
+Review
+Wiki
+More
+Sessions
+Pinned
+3
+Add enterprise SSO
+Add multi-region failover
+Upgrade Node.js across services
+Investigate API latency spike
+Patch vulnerable dependencies
+Fix failing checkout tests
+Review authentication changes
+Expand payment test coverage
+Document service architecture
+More
+Participated
+12
+Review API changes
+Optimize database queries
+Fix failing checkout tests
+More
+Kenzo Park
+Cognition
+Add enterprise SSO
+XL
+
+Add SAML SSO for enterprise customers.
+
+Follow our existing auth patterns and let admins configure it in organization settings. Keep email login working for everyone else.
+
+Explored authentication across 3 repositories
+Implemented SSO and organization settings
++13
+-1
+Devin
+8:05 PM
+
+Here’s the PR. Enterprise admins can now configure SSO in organization settings, and members can sign in through their identity provider.
+
+I tested setup, sign-in, and account linking in the browser. Existing email login still works, and all checks pass.
+
+Tested sign-in and account linking in the browser
+5 tests passed
+
+feat: Add SAML SSO for enterprise
+
+acme/platform #2922
+·
++9
+-14
+View PR
+
+Added to the PR. Admins can require SSO once setup is verified. I also added tests for enforcement and recovery access.
+
+Plan a feature, fix bugs, or perform a security scan
+
+Ultra
+PR Open
+·
+acme/platform #2922
+
+Add enterprise SSO
+
+bwhuffman
+main
+enterprise-sso
+12 files changed
++8
+-14
+Devin’s analysis
+
+Adds SAML single sign-on for enterprise organizations. Admins can configure their identity provider, verify the connection, and require SSO from organization settings.
+
+Test recording
+on Mac OS X virtual environment
+2/5
+Your teammate’s favorite teammate
+
+Selecting seat
+
+Devin’s computer
+
+Flag enabled; mobile viewport on enterprise child org
+
+Testing 3/12
+
+0:24
+
+Ensure compatibility across various screen sizes and maintain usability features
+
+0:36
+
+Incorporate accessibility guidelines to enhance user experience for all
+
+0:24
+
+Render in light and dark themes
+
+0:24
+
+Test for offline mode
+
+0:30
+
+Loading screen improvement
+
+0:45
+
+User feedback integration
+
+1:00
+
+Sync error handling
+
+1:15
+
+Data retrieval optimization
+
+1:30
+
+Offline data storage enhancement
+
+2:15
+
+Real-time analytics integration
+
+3:00
+
+User interface optimization
+
+Tests end to end on its own computer
+
+Devin spins up its own Windows, Mac, and Linux virtual machines as needed to build, test in its browser, and record itself clicking through what it built
+
+Search all models
+Fusion
+Ultra
+Normal
+Lite
+All models
+SWE-2
+Fable 5.1
+GPT-6 Astra
+Grok 4.7
+Gemini 3.8 Flash
+
+Fusion
+
+Pairs frontier intelligence with cost-efficient execution
+
+Lead
+Claude Fable 5.1
+Effort
+High
+Sidekick
+SWE-2 Medium
+Fast mode
+Fusion
+Gets the best from every frontier model
+
+Access frontier performance for up to 60% less. Devin mixes and matches models to get the most from each
+
+Sessions
+
+Weekly dependency upgrades
+
+1 min
+1
+1
+
+Upgrade React to 19.2
+
+PR is ready
+1
+1
+
+Bump Next.js to 16.3
+
+PR is ready
+1
+1
+
+Architecture rewrite
+
+Working
+·
+56 hours
+·
+
+Notification panel UX
+
+Review PR
+1
+
+Refactor artifact library
+
+1 min
+1
+
+Update CSS styles for mobile responsiveness
+
+5 min
+1
+
+Optimize images for faster loading
+
+3 min
+1
+
+Architecture rewrite
+
+XL
+
+J
+
+Jin Park
+
+8:05 PM
+
+Hello there
+
+I want to build a mobile webapp
+
+Rewrite the notification inbox architecture to simplify state management, component boundaries, and data flow while preserving all existing user-facing behavior.
+
+Worked for 1 min
+
++13
+-1
+
+Devin
+
+8:05 PM
+
+Hey! I have this cool idea can you help me create an awesome snake game for my portfolio? Like those ones you use to play on the old Nokia phones? I’ve attached some reference pics
+
+generic-file.txt
+
+321 KB
+
+Keeps working when your laptop is closed
+
+Delegate a big task, then Devin splits it across parallel cloud agents, manages them, and reports back
+
+#eng-bugs
+Jin Park
+11:55
+
+The API is returning duplicate results when loading the next page. @Devin can you help fix this?
+
+👀
+1
+Devin
+11:55
+
+Fixed it and added a regression test.
+Here’s the PR: #1934 Duplicate content
+
+Devin is working...
+Joins the thread when you @Devin
+
+Tag @Devin in Slack, Teams, and more. Devin reads the thread, responds to follow-ups, and gets to work
+
+PagerDuty
+8:05 PM
+
+🔴 High severity: Elevated error rate in api-server. Error rate exceeded 8% following the latest deployment.
+
+Devin
+8:05 PM
+
+I found the errors were introduced by the latest deployment to api-server. I’m reproducing the failure and preparing a fix.
+
+Worked for 1 min
++13
+-1
+
+fix: handle null user in api-server auth middleware
+
+acme-api #30146
+·
++13
+-1
+View PR
+Watches for issues and fixes them proactively
+
+Set up automations so Devin handles bugs, failed CI, and other alerts as they land
+
+From problem to merged PR,
+Devin gets hard engineering work done.
+
+01
+
+Understand and plan
+
+Map the codebase and systems architecture accurately and efficiently. Devin updates diagrams and code maps as quickly as the codebase changes
+
+Explore Wiki
+Getting Started
+Overview
+Purpose and scope
+Technology stack
+Application architecture
+MyApp Component Wrapper
+File-based routing structure
+Homepage structure
+Core dependencies
+Key dependency roles
+Global styling system
+Typography system
+Layout utilities
+Custom components
+Font loading
+Metadata & SEO management
+System architecture
+Core agent framework
+Jobs and schedules
+DBT integration
+Client library
+AI integration
+Identity and organization data
+Lifecycle email system
+MCP
+Web framework integration
+Example and guides
+Development and deployment
+
+Overview
+
+Evalon supports three distinct authentication methods.
+
+Password Validation
+
+User enters password in ChoosePassword
+
+Check Biometrics Availability
+
+Proceed without Biometrics
+
+Display Error Message
+
+User chooses Biometrics
+
+Valid
+
+Invalid
+
+Not Available / User declines
+
+Available
+
+Key features
+
+Password sign-in: ChoosePassword validates the password against the policy in auth/passwordRules.ts before creating a session.
+
+Biometric unlock: After a valid password, users can enroll Face ID or fingerprint; BiometricGate checks device support first.
+
+Graceful fallback: When biometrics are unavailable or declined, sign-in continues with the password and the choice is stored per device.
+
+Single sign-on: Enterprise orgs authenticate through SAML or OIDC via SsoProvider, which maps identity claims to organization roles.
+
+Note: Session tokens are refreshed by AuthProvider and revoked on sign-out across all three methods.
+
+Tech Stack
+
+Authentication is built on React Native with Expo LocalAuthentication for biometrics, secure token storage in the device keychain, and a Node.js auth service that issues short-lived JWTs backed by refresh tokens.
+
+aws
+
+backend-api
+
+Synced just now
+
+gitlab
+
+marketing-site
+
+12s ago
+
+aws
+
+infrastructure
+
+Synced just now
+
+02
+
+Code and test
+
+Delegate to Devin Cloud, iterate in Desktop or CLI, or tag @Devin. Wherever you work, Devin gives you the best of all frontier models
+
+Explore Devin Cloud
+iOS Finance app
+2 passed
+J
+Jin Park
+8:05 PM
+
+Add bulk actions to the table. Support labeling,
+and archiving, and test the flows end-to-end.
+
+Devin
+8:05 PM
+
+Implemented bulk actions and verified all three flows in the browser. Added tests for selection, permissions, and error handling.
+
+Here’s the PR. All tests are passing, ready for review.
+
+Worked for 1 min
+·
+18 tests passed
++13
+-1
+
+feature: Add bulk actions to the transaction table
+
+acme-mobile #30146
+·
++9
+-14
+View pull request
+
+03
+
+Review
+
+Devin Review finds bugs and vulnerabilities before they reach production.
+Assign Devin to fix in one click
+
+Explore Devin Review
+Open
+
+Add session attribution UI
+
+bwhuffman
+main
+devin/USA-938-176594
+12 files
++8
+-14
+Devin’s analysis
+
+The ComparePage fetches job details for two batches to display a comparison table. Previously, all jobs were fetched in a single query:
+
+const gulp = require('gulp');
+const util = require('./build/lib/util');
+const path = require('path');
+const compilation = require('./build/lib/compilation');
+// Fast compile for development time
+gulp.task('clean-client', util.rimraf('out'));
+gulp.task('compile-client', ['clean-client'], compilation.compileTask('out', false));
+gulp.task('watch-client', ['clean-client'], compilation.watchTask('out', false));
+
+This caused double-fetching: when batch2 arrived after batch1, allJobIds changed, invalidating the cache and refetching all jobs including batch1's. The fix uses useQueries to cache each job independently, so only new job IDs trigger fetches.
+
+3 stacked
+
+#6481
+Remove dead variables
++3
+-12
+#6474
+Update /settings routes to match session attribution UI
++72
+-28
+#6472
+Add session attribution UI for scheduled Devins
++218
+-14
+main
+
+1 ready, 2 pending changes
+
+1 vulnerability
+
+JWT signature check is skipped when the key is chased
+
+Chain: a cached key plus an unvalidated alg header
+
+2 bugs
+
+Collapse toggle icon vanishes when you move the cursor onto it
+
+AccountSwitcherContent.tsx:135
+
+DS examples not updated for new `onToggleChildSessions` and `isChildSessionsCollapsed` props
+
+AccountSwitcherContent.tsx:135
+
+3 flags
+
+Left-side hover zone captures clicks on the title's leading text
+
+AccountSwitcherContent.tsx:135
+
+04
+
+Automate and maintain
+
+Create scheduled workflows and trigger-based automations for repetitive work. Devin swarms can proactively find novel vulnerabilities, performance issues, and gaps in test coverage
+
+Explore Security Swarm
+
+“Every morning, find stale Linear tickets and
+clean them up or nudge the owner.”
+
+Trigger
+
+Every day
+at
+9:00am
+Issue
+in team
+engineering
+and
+status
+is
+todo
+
+Action
+
+Review open issues with no activity in the last 14 days. Close any confirmed resolved by linked PRs, update outdated labels, and ask the owner for a status update on anything still outstanding.
+
+Connect once, deliver repeatedly
+with your favorite tools
+
+Triage bugs as they land
+
+Fix CI when it fails
+
+Investigate alerts as they fire
+
+Turn errors into fixes
+
+Triage issues when they get posted
+
+Pick up issues as they're assigned
+
+Assign a ticket, get a PR
+
+Build from a spec page
+
+Recently
+shipped
+[ 01 ]
+10.15
+Introducing Devin Oncall
+Product
+10.13
+Devin in Pylon: Driving faster Median Time To Fix
+Product
+10.13
+Gemini 4 Argon is now available in Devin
+Product
+10.07
+Claude Haiku 5.5 is now available in Devin
+Product
+10.05
+Memory and dreaming: how Devin learns from working with you
+Product
+09.29
+GPT-6.1 Sol is now available in Devin
+Product
+09.29
+Sign in with ChatGPT
+Product
+Enterprise security
+with fine-grained controls
+Inputs and outputs are always your IP
+Zero data retention enforced with model providers
+Comprehensive audit logs
+Every session runs in its own VM
+RBAC / SSO / SCIM / OIDC
+Private networking available
+Stop deprioritizing
+Do it all with Devin
+Get started
+Book a demo
+Company
+Careers
+Brand
+About
+Support
+Legal
+Terms of Service
+Acceptable Use Policy
+Privacy Policy
+Data Use
+Your Privacy Choices
+Connect
+X
+LinkedIn
+YouTube
+Reddit

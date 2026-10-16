@@ -5,10 +5,13 @@
   "scripts": {
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1 --port 4321",
-    "test": "node --test scripts/catalog.test.mjs",
+    "test": "node --test scripts/catalog.test.mjs scripts/pricing.test.mjs",
     "validate": "node scripts/validate-data.mjs"
   },
   "dependencies": {
     "astro": "5.18.2"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
   }
 }
