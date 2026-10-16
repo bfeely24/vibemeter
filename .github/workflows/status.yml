@@ -1,0 +1,32 @@
+name: Status check
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/check-status.mjs --write
+      - name: Commit a status change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/status_checks.json history/status
+          if git diff --cached --quiet; then
+            echo "no status change"
+            exit 0
+          fi
+          git commit -m "chore(status): record status checks"
+          git push
