@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "tool_id": "lovable",
+    "url": "https://lovable.dev/pricing",
+    "html_hash": "9bb32716de68dfef313d8dc978d6d7ad9308edbbdf38f1fc3c24f99737654da9",
+    "archived_path": "history/pricing/lovable.txt",
+    "captured_at": "2026-10-16T00:58:00.346Z"
+  },
+  {
+    "tool_id": "bolt",
+    "url": "https://bolt.new/pricing",
+    "html_hash": "7c0b06c5dbc849067609298367a324b57faaf488d7d1517870aa51c21e65bf6f",
+    "archived_path": "history/pricing/bolt.txt",
+    "captured_at": "2026-10-16T00:58:02.359Z"
+  },
+  {
+    "tool_id": "cursor",
+    "url": "https://cursor.com/pricing",
+    "html_hash": "f89e6556c2877da5a586170b9141532554c535419344c4d00a3bd2cc823745d8",
+    "archived_path": "history/pricing/cursor.txt",
+    "captured_at": "2026-10-16T00:58:05.745Z"
+  },
+  {
+    "tool_id": "claude-code",
+    "url": "https://claude.com/pricing",
+    "html_hash": "09be93298c0df510d2267b75adb15c84543f3e0ed7542e6e28a176fefce66be4",
+    "archived_path": "history/pricing/claude-code.txt",
+    "captured_at": "2026-10-16T00:58:07.572Z"
+  },
+  {
+    "tool_id": "v0",
+    "url": "https://v0.app/pricing",
+    "html_hash": "78eec1f516cdc8e82726cc8399978fb1b472cb207b753e606b9563bec413ead1",
+    "archived_path": "history/pricing/v0.txt",
+    "captured_at": "2026-10-16T00:58:09.269Z"
+  },
+  {
+    "tool_id": "windsurf",
+    "url": "https://devin.ai/pricing",
+    "html_hash": "c950bd5ed743d7dc8f311e438a8163e6b8b1cab3b3b162d7b289cddf80fee2f8",
+    "archived_path": "history/pricing/windsurf.txt",
+    "captured_at": "2026-10-16T00:58:11.022Z"
+  },
+  {
+    "tool_id": "github-copilot",
+    "url": "https://github.com/features/copilot/plans",
+    "html_hash": "edab17c67771878448af26500e80496e38040857c9760782ded470288a7db4e7",
+    "archived_path": "history/pricing/github-copilot.txt",
+    "captured_at": "2026-10-16T00:58:13.481Z"
+  },
+  {
+    "tool_id": "base44",
+    "url": "https://base44.com/pricing",
+    "html_hash": "e5672119eac9c97bb8216f4a57f602421ebe27453d10709ea4f40f27381d12c2",
+    "archived_path": "history/pricing/base44.txt",
+    "captured_at": "2026-10-16T00:58:15.691Z"
+  },
+  {
+    "tool_id": "devin",
+    "url": "https://devin.ai/",
+    "html_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "history/pricing/devin.txt",
+    "captured_at": "2026-10-16T00:58:17.599Z"
+  }
+]
