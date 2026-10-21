@@ -55,19 +55,19 @@
   },
   {
     "tool_id": "windsurf",
-    "checked_at": "2026-10-21T15:15:23.599Z",
-    "indicator": null,
+    "checked_at": "2026-10-21T19:28:40.562Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": null,
-    "http_status": 0,
+    "description": "All Systems Operational",
+    "http_status": 200,
     "source_url": "https://status.windsurf.com/api/v2/status.json"
   },
   {
     "tool_id": "github-copilot",
-    "checked_at": "2026-10-21T15:15:23.599Z",
-    "indicator": "minor",
+    "checked_at": "2026-10-21T19:28:40.562Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "Partially Degraded Service",
+    "description": "All Systems Operational",
     "http_status": 200,
     "source_url": "https://www.githubstatus.com/api/v2/status.json"
   },
@@ -82,11 +82,11 @@
   },
   {
     "tool_id": "devin",
-    "checked_at": "2026-10-21T15:15:23.599Z",
-    "indicator": null,
+    "checked_at": "2026-10-21T19:28:40.562Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": null,
-    "http_status": 0,
+    "description": "All Systems Operational",
+    "http_status": 200,
     "source_url": "https://status.devin.ai/api/v2/status.json"
   }
 ]
