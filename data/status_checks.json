@@ -46,10 +46,10 @@
   },
   {
     "tool_id": "v0",
-    "checked_at": "2026-10-16T00:30:00Z",
-    "indicator": "none",
+    "checked_at": "2026-10-23T16:57:06.874Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "All Systems Operational",
+    "description": "Partially Degraded Service",
     "http_status": 200,
     "source_url": "https://www.vercel-status.com/api/v2/status.json"
   },
