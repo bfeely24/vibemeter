@@ -37,10 +37,10 @@
   },
   {
     "tool_id": "claude-code",
-    "checked_at": "2026-10-22T11:18:12.425Z",
-    "indicator": "none",
+    "checked_at": "2026-10-25T06:36:24.865Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "All Systems Operational",
+    "description": "Minor Service Outage",
     "http_status": 200,
     "source_url": "https://status.anthropic.com/api/v2/status.json"
   },
