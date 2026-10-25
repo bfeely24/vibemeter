@@ -1,0 +1,9 @@
+{
+  "tool_id": "claude-code",
+  "checked_at": "2026-10-25T12:01:30.271Z",
+  "indicator": "none",
+  "incident_title": null,
+  "description": "All Systems Operational",
+  "http_status": 200,
+  "source_url": "https://status.anthropic.com/api/v2/status.json"
+}
