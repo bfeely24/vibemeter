@@ -19,19 +19,19 @@
   },
   {
     "tool_id": "replit",
-    "checked_at": "2026-10-16T00:30:00Z",
-    "indicator": null,
+    "checked_at": "2026-10-27T00:26:02.366Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": null,
-    "http_status": 403,
+    "description": "All systems are operational.",
+    "http_status": 200,
     "source_url": "https://status.replit.com/api/v2/status.json"
   },
   {
     "tool_id": "cursor",
-    "checked_at": "2026-10-16T05:53:03.390Z",
-    "indicator": "none",
+    "checked_at": "2026-10-27T00:26:02.366Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "All Systems Operational",
+    "description": "Partially Degraded Service",
     "http_status": 200,
     "source_url": "https://status.cursor.com/api/v2/status.json"
   },
@@ -73,11 +73,11 @@
   },
   {
     "tool_id": "base44",
-    "checked_at": "2026-10-16T00:30:00Z",
-    "indicator": null,
+    "checked_at": "2026-10-27T00:26:02.366Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": null,
-    "http_status": 403,
+    "description": "All Systems Operational",
+    "http_status": 200,
     "source_url": "https://status.base44.com/api/v2/status.json"
   },
   {

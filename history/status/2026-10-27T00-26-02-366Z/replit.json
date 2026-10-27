@@ -1,0 +1,9 @@
+{
+  "tool_id": "replit",
+  "checked_at": "2026-10-27T00:26:02.366Z",
+  "indicator": "none",
+  "incident_title": null,
+  "description": "All systems are operational.",
+  "http_status": 200,
+  "source_url": "https://status.replit.com/api/v2/status.json"
+}
