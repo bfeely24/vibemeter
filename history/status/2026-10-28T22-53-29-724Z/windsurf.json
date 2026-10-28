@@ -1,0 +1,9 @@
+{
+  "tool_id": "windsurf",
+  "checked_at": "2026-10-28T22:53:29.724Z",
+  "indicator": "none",
+  "incident_title": null,
+  "description": "All Systems Operational",
+  "http_status": 200,
+  "source_url": "https://status.windsurf.com/api/v2/status.json"
+}
