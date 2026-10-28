@@ -37,10 +37,10 @@
   },
   {
     "tool_id": "claude-code",
-    "checked_at": "2026-10-25T12:01:30.271Z",
-    "indicator": "none",
+    "checked_at": "2026-10-28T18:41:35.846Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "All Systems Operational",
+    "description": "Partially Degraded Service",
     "http_status": 200,
     "source_url": "https://status.anthropic.com/api/v2/status.json"
   },
@@ -55,11 +55,11 @@
   },
   {
     "tool_id": "windsurf",
-    "checked_at": "2026-10-21T19:28:40.562Z",
-    "indicator": "none",
+    "checked_at": "2026-10-28T18:41:35.846Z",
+    "indicator": null,
     "incident_title": null,
-    "description": "All Systems Operational",
-    "http_status": 200,
+    "description": null,
+    "http_status": 0,
     "source_url": "https://status.windsurf.com/api/v2/status.json"
   },
   {
