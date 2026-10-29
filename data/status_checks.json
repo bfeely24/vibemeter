@@ -82,11 +82,11 @@
   },
   {
     "tool_id": "devin",
-    "checked_at": "2026-10-29T02:10:27.040Z",
-    "indicator": null,
+    "checked_at": "2026-10-29T08:30:09.363Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": null,
-    "http_status": 503,
+    "description": "All Systems Operational",
+    "http_status": 200,
     "source_url": "https://status.devin.ai/api/v2/status.json"
   }
 ]
