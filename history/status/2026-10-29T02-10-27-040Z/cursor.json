@@ -1,0 +1,9 @@
+{
+  "tool_id": "cursor",
+  "checked_at": "2026-10-29T02:10:27.040Z",
+  "indicator": "none",
+  "incident_title": null,
+  "description": "All Systems Operational",
+  "http_status": 200,
+  "source_url": "https://status.cursor.com/api/v2/status.json"
+}
