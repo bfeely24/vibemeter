@@ -1,0 +1,9 @@
+{
+  "tool_id": "replit",
+  "checked_at": "2026-10-30T22:27:54.480Z",
+  "indicator": "critical",
+  "incident_title": null,
+  "description": "We are investigating an issue.",
+  "http_status": 200,
+  "source_url": "https://status.replit.com/api/v2/status.json"
+}
