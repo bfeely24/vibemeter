@@ -1,0 +1,9 @@
+{
+  "tool_id": "cursor",
+  "checked_at": "2026-10-30T00:14:26.801Z",
+  "indicator": "minor",
+  "incident_title": null,
+  "description": "Partially Degraded Service",
+  "http_status": 200,
+  "source_url": "https://status.cursor.com/api/v2/status.json"
+}
