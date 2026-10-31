@@ -19,10 +19,10 @@
   },
   {
     "tool_id": "replit",
-    "checked_at": "2026-10-30T22:27:54.480Z",
-    "indicator": "critical",
+    "checked_at": "2026-10-31T01:45:15.888Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "We are investigating an issue.",
+    "description": "All systems are operational.",
     "http_status": 200,
     "source_url": "https://status.replit.com/api/v2/status.json"
   },
