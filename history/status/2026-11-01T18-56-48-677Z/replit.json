@@ -1,0 +1,9 @@
+{
+  "tool_id": "replit",
+  "checked_at": "2026-11-01T18:56:48.677Z",
+  "indicator": "major",
+  "incident_title": null,
+  "description": "Major service outage",
+  "http_status": 200,
+  "source_url": "https://status.replit.com/api/v2/status.json"
+}
