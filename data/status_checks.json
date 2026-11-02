@@ -19,10 +19,10 @@
   },
   {
     "tool_id": "replit",
-    "checked_at": "2026-11-01T18:56:48.677Z",
-    "indicator": "major",
+    "checked_at": "2026-11-02T08:57:54.906Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "Major service outage",
+    "description": "All systems are operational.",
     "http_status": 200,
     "source_url": "https://status.replit.com/api/v2/status.json"
   },
