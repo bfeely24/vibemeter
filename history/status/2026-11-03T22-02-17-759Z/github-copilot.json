@@ -1,0 +1,9 @@
+{
+  "tool_id": "github-copilot",
+  "checked_at": "2026-11-03T22:02:17.759Z",
+  "indicator": "minor",
+  "incident_title": null,
+  "description": "Partially Degraded Service",
+  "http_status": 200,
+  "source_url": "https://www.githubstatus.com/api/v2/status.json"
+}
