@@ -1,0 +1,9 @@
+{
+  "tool_id": "v0",
+  "checked_at": "2026-11-05T23:57:14.720Z",
+  "indicator": "none",
+  "incident_title": null,
+  "description": "All Systems Operational",
+  "http_status": 200,
+  "source_url": "https://www.vercel-status.com/api/v2/status.json"
+}
