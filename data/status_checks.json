@@ -64,10 +64,10 @@
   },
   {
     "tool_id": "github-copilot",
-    "checked_at": "2026-11-05T23:57:14.720Z",
-    "indicator": "minor",
+    "checked_at": "2026-11-06T06:02:31.237Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "Partially Degraded Service",
+    "description": "All Systems Operational",
     "http_status": 200,
     "source_url": "https://www.githubstatus.com/api/v2/status.json"
   },
