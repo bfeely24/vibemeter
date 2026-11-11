@@ -1,10 +1,10 @@
 [
   {
     "tool_id": "lovable",
-    "checked_at": "2026-10-16T00:30:00Z",
-    "indicator": "none",
+    "checked_at": "2026-11-11T18:34:17.153Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "All Systems Operational",
+    "description": "Partial System Degradation",
     "http_status": 200,
     "source_url": "https://status.lovable.dev/api/v2/status.json"
   },
