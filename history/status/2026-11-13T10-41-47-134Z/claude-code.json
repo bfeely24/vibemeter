@@ -1,0 +1,9 @@
+{
+  "tool_id": "claude-code",
+  "checked_at": "2026-11-13T10:41:47.134Z",
+  "indicator": "major",
+  "incident_title": null,
+  "description": "Partial System Outage",
+  "http_status": 200,
+  "source_url": "https://status.anthropic.com/api/v2/status.json"
+}
