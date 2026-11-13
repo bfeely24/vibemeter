@@ -37,10 +37,10 @@
   },
   {
     "tool_id": "claude-code",
-    "checked_at": "2026-11-13T10:41:47.134Z",
-    "indicator": "major",
+    "checked_at": "2026-11-13T18:06:53.302Z",
+    "indicator": "minor",
     "incident_title": null,
-    "description": "Partial System Outage",
+    "description": "Partially Degraded Service",
     "http_status": 200,
     "source_url": "https://status.anthropic.com/api/v2/status.json"
   },
