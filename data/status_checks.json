@@ -37,19 +37,19 @@
   },
   {
     "tool_id": "claude-code",
-    "checked_at": "2026-11-14T03:35:52.843Z",
-    "indicator": "minor",
+    "checked_at": "2026-11-19T04:31:47.066Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "Partially Degraded Service",
+    "description": "All Systems Operational",
     "http_status": 200,
     "source_url": "https://status.anthropic.com/api/v2/status.json"
   },
   {
     "tool_id": "v0",
-    "checked_at": "2026-11-18T23:30:51.841Z",
-    "indicator": "minor",
+    "checked_at": "2026-11-19T04:31:47.066Z",
+    "indicator": "none",
     "incident_title": null,
-    "description": "Minor Service Outage",
+    "description": "All Systems Operational",
     "http_status": 200,
     "source_url": "https://www.vercel-status.com/api/v2/status.json"
   },
